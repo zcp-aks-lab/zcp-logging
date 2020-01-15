@@ -45,7 +45,7 @@ data:
     [INPUT]
         Name              tail
         Tag               ingress.*
-        Path              /var/log/containers/nginx-ingress-*controller*_kube-system_*.log
+        Path              /var/log/containers/p*nginx-ingress-*controller*_kube-system_*.log
         Parser            containerd
         DB                /var/log/flb_ingress.db
         Mem_Buf_Limit     5MB
