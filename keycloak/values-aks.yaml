@@ -48,10 +48,10 @@ affinity:
         - key: role
           operator: In
           values:
-          - management
+          - logging
 
 tolerations:
-  - key: "management"
+  - key: "logging"
     operator: "Equal"
     value: "true"
     effect: "NoSchedule"
